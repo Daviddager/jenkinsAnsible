@@ -1,0 +1,7 @@
+---
+  - name: Add repo for java 8
+    become: true
+    become_user: root
+    yum:
+      name=java-openjdk
+      state=latest 
